@@ -1,0 +1,72 @@
+<html>  
+    <head>   
+    <title>  
+    REGISTRATION PAGE 
+    </title>  
+    </head>
+    <style>
+        body {
+          height: 200px;
+          background: rgb(57,160,217);
+          background: linear-gradient(to left, rgb(4, 104, 158) 0%, rgb(78, 175, 207) 48%, rgba(195,254,255,1) 100%);
+        }
+        div {
+            background-color: rgb(235, 235, 235);
+            width: 1200px;
+            border: 15px solid rgb(5, 168, 168);
+            padding: 50px;
+            margin: 20px;
+        }
+    </style> 
+    <body>
+      <div>
+        <h1 style="font-size: 50px;">Registration Form</h1>  
+    <br>  
+    <br>  
+    <form>  
+      <p style="font-size:25px ;font-family: Verdana, Geneva, Tahoma, sans-serif;"><b>Personal information</b></p>
+    <label> Firstname </label>         
+    <input type="text" name="firstname" size="15"/> <br> <br>  
+    <label> Middlename: </label>     
+    <input type="text" name="middlename" size="15"/> <br> <br>  
+    <label> Lastname: </label>         
+    <input type="text" name="lastname" size="15"/> <br> <br>  
+      
+    <label>   
+    Gender :  
+    </label>   
+    <select>  
+    <option value="-">-</option>  
+    <option value="Female">Female</option>  
+    <option value="Male">Male</option>
+    <option value="Others">Others</option>   
+    </select>  
+      
+    <br>  
+    <br>  
+      
+    <label for="phone">Phone number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="1234567890" pattern="[0-9]{10}=" required><br><br>
+    <br>
+    Address  
+    
+    <br>  
+    <textarea cols="80" rows="5" value="address">  
+    </textarea>  
+    
+    <br> <br>  
+    Email:  
+    <input type="email" id="email" name="email"/> <br>    
+    
+    <br> <br>  
+    Password:  
+    <input type="Password" id="pass" name="pass"> <br>   
+    
+    <br> <br>  
+    Re-type password:  
+    <input type="Password" id="repass" name="repass"> <br> <br>  
+    <input type="button" value="Submit"/>  
+    </form> 
+      </div> 
+    </body>  
+    </html>

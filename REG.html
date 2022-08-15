@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        h2{text-align: center;text-shadow: 5px 5px 5px rgb(24, 0, 0);
+            background-color:rgb(8, 30, 57);
+            padding-bottom: 15px; padding-top: 15px;
+        }
+    </style>
+    </head>
+    <body>
+        <h2 style="font-size: 400%; color:aliceblue; ;"><img src="logo.png" class="left" width="60px" >&nbsp;&nbsp;Bidhan Chandra College</h1>
+        <div class="complete-info">
+            <h1 class="registration-heading">Student Registration Form</h1>
+            <form action="#" autocomplete="on">
+                <fieldset>
+                    <legend><strong>Personal Information</strong></legend>
+                    <div class="contents">
+                        <div>
+                            <label for="name">Name:<span class="star">* </span></label>
+                            <input type="text" id="fname" name="fname" placeholder="First name" required />
+                            <input type="text" id="mname" name="mname" placeholder="Middle name" />
+                            <input type="text" id="lname" name="lname" placeholder="Last name" required />
+                        </div>
+                        <div>
+                            <label for="guardname">Guardian \ Parent Name:<span class="star">* </span></label>
+                            <input type="text" name="guardname" id="guardname" required />
+                        </div>
+                        <div>
+                            <label for="dob">Date of Birth:<span class="star">* </span></label>
+                            <input type="date" id="dob" name="dob" min="1990-01-01" max="2010-01-01" required />
+                        </div>
+                        <div>
+                            <label for="gender">Gender:<span class="star">* </span></label>
+                            <select name="gender" id="gender">
+                                <option value="-" selected>What is your gender?</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="caste">Caste:<span class="star">* </span></label>
+                            <select name="caste" id="caste">
+                                <option value="-" selected>What is your caste?</option>
+                                <option value="general">General</option>
+                                <option value="obc">OBC</option>
+                                <option value="scst">SC/ST</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="phone-number">Mobile [+91]:<span class="star">* </span></label>
+                            <input type="tel" name="phone-number" pattern="[0-9]{10}" id="phone-number" placeholder="10 digits number"
+                                maxlength="10" required />
+                        </div>
+                        <div>
+                            <label for="email">Email:<span class="star">* </span></label>
+                            <input type="email" id="email" name="email" placeholder="e.g. abc@mail.com" required />
+                        </div>
+                        <div>
+                            <label for="guard-occupation">Guardian Occupation:<span class="star">* </span></label>
+                            <input type="text" id="guard-occupation" name="guard-occupation" required />
+                        </div>
+                        <div>
+                            <label for="blood-group">Blood Group:</label>
+                            <select name="blood-group" id="blood-group">
+                                <option value="">What is your blood group?</option>
+                                <option value="A+">A+</option>
+                                <option value="B+">B+</option>
+                                <option value="AB+">AB+</option>
+                                <option value="O+">O+</option>
+                                <option value="A-">A-</option>
+                                <option value="B-">B-</option>
+                                <option value="AB-">AB-</option>
+                                <option value="O-">O-</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="disability">Are you a disabled person?<span class="star">* </span></label>
+                            <select name="disability" id="disability">
+                                <option value="No" selected>No</option>
+                                <option value="Yes">Yes</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend><strong>Address Information</strong></legend>
+                    <div class="contents">
+                        <div class="grid-1x3">
+                            <label for="address">Address:</label>
+                            <input type="text" id="address-line" autocomplete="address-line" size="30" placeholder="Enter address" required />
+                        </div>
+                        <div>
+                            <label for="city">City:<span class="star">* </span></label>
+                            <input type="text" id="city" name="city" required />
+                        </div>
+                        <div>
+                            <label for="state">State:<span class="star">* </span></label>
+                            <select name="state" id="state" required>
+                                <option value="">Select your state</option>
+                                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                <option value="Assam">Assam</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Chhattisgarh">Chhattisgarh</option>
+                                <option value="Goa">Goa</option>
+                                <option value="Gujarat">Gujarat</option>
+                                <option value="Haryana">Haryana</option>
+                                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                <option value="Jharkhand">Jharkhand</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Kerala">Kerala</option>
+                                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Manipur">Manipur</option>
+                                <option value="Meghalaya">Meghalaya</option>
+                                <option value="Mizoram">Mizoram</option>
+                                <option value="Nagaland">Nagaland</option>
+                                <option value="Odisha">Odisha</option>
+                                <option value="Punjab">Punjab</option>
+                                <option value="Rajasthan">Rajasthan</option>
+                                <option value="Sikkim">Sikkim</option>
+                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                <option value="Telangana">Telangana</option>
+                                <option value="Tripura">Tripura</option>
+                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option value="Uttarakhand">Uttarakhand</option>
+                                <option value="West Bengal">West Bengal</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="pin">Pin Code:<span class="star">* </span></label>
+                            <input type="text" id="pin-code" name="pin" pattern="[0-9]{6}" placeholder="Only 6 digit" required />
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend><strong>Educational Information</strong></legend>
+                    <div class="contents">
+                        <div>
+                            <label for="class-10-board">Choose your 10th examination board:<span class="star">* </span></label>
+                            <select name="SBoard" id="s-board" required>
+                                <option value="">Select your board</option>
+                                <option value="Central Board of Secondary Education">Central Board of Secondary Education</option>
+                                <option value="Indian Certificate of Secondary Education">Indian Certificate of Secondary Education
+                                </option>
+                                <option value="West Bengal Board of Secondary Education">West Bengal Board of Secondary Education</option>
+                                <option value="West Bengal Board of Madrasah Education">West Bengal Board of Madrasah Education</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="class-12-board">Choose your 10(+2) examination board:<span class="star">* </span></label>
+                            <select name="HSBoard" id="hs-board" required>
+                                <option value="">Select your board</option>
+                                <option value="Central Board of Secondary Education">Central Board of Secondary Education</option>
+                                <option value="Indian Certificate of Secondary Education">Indian Certificate of Secondary Education
+                                </option>
+                                <option value="West Bengal Council of Higher Secondary Education">West Bengal Council of Higher Secondary
+                                    Education
+                                </option>
+                                <option value="West Bengal Board of Madrasah Education">West Bengal Board of Madrasah Education</option>
+                            </select>
+                        </div>
+                        <div id="class-12-result" class="grid-half">
+                            <label for="class-12-marks">Marks obtained in 10(+2) examination:<span class="star">* </span></label>
+                          <div>
+                            <select name="sub1" id="sub1" required>
+                                <option value="">Choose your subject</option>
+                                <option value="Physics">Physics</option>
+                                <option value="Chemistry">Chemistry</option>
+                                <option value="Mathematics">Mathematics</option>
+                                <option value="Biology">Biology</option>
+                                <option value="English">English</option>
+                                <option value="Hindi">Hindi</option>
+                                <option value="Bengali">Bengali</option>
+                            </select>
+                            <input type="text" name="marks-obtained-sub1" placeholder="Marks Obtained" required>
+                            <input type="text" name="full-marks-sub1" placeholder="Total Marks" required>
+                          </div>
+                          <div>
+                            <select name="sub2" id="sub2" required>
+                                <option value="">Choose your subject</option>
+                                <option value="Physics">Physics</option>
+                                <option value="Chemistry">Chemistry</option>
+                                <option value="Mathematics">Mathematics</option>
+                                <option value="Biology">Biology</option>
+                                <option value="English">English</option>
+                                <option value="Hindi">Hindi</option>
+                                <option value="Bengali">Bengali</option>
+                            </select>
+                            <input type="text" name="marks-obtained-sub2" placeholder="Marks Obtained" required>
+                            <input type="text" name="full-marks-sub2" placeholder="Total Marks" required>
+                          </div>
+                          <div>
+                            <select name="sub3" id="sub3" required>
+                                <option value="">Choose your subject</option>
+                                <option value="Physics">Physics</option>
+                                <option value="Chemistry">Chemistry</option>
+                                <option value="Mathematics">Mathematics</option>
+                                <option value="Biology">Biology</option>
+                                <option value="English">English</option>
+                                <option value="Hindi">Hindi</option>
+                                <option value="Bengali">Bengali</option>
+                            </select>
+                            <input type="text" name="marks-obtained-sub3" placeholder="Marks Obtained" required>
+                            <input type="text" name="full-marks-sub3" placeholder="Total Marks" required>
+                          </div>
+                          <div>
+                            <select name="sub4" id="sub4" required>
+                                <option value="">Choose your subject</option>
+                                <option value="Physics">Physics</option>
+                                <option value="Chemistry">Chemistry</option>
+                                <option value="Mathematics">Mathematics</option>
+                                <option value="Biology">Biology</option>
+                                <option value="English">English</option>
+                                <option value="Hindi">Hindi</option>
+                                <option value="Bengali">Bengali</option>
+                            </select>
+                            <input type="text" name="marks-obtained-sub4" placeholder="Marks Obtained" required>
+                            <input type="text" name="full-marks-sub4" placeholder="Total Marks" required>
+                          </div>
+                          <div>
+                            <select name="sub5" id="sub5" required>
+                                <option value="">Choose your subject</option>
+                                <option value="Physics">Physics</option>
+                                <option value="Chemistry">Chemistry</option>
+                                <option value="Mathematics">Mathematics</option>
+                                <option value="Biology">Biology</option>
+                                <option value="English">English</option>
+                                <option value="Hindi">Hindi</option>
+                                <option value="Bengali">Bengali</option>
+                            </select>
+                            <input type="text" name="marks-obtained-sub5" placeholder="Marks Obtained" required>
+                            <input type="text" name="full-marks-sub5" placeholder="Total Marks" required>
+                          </div>
+                        </div>
+                        <div id="percentage-calc-12">
+                            <label for="percentage">Your 10(+2) percentage:<span class="star">* </span></label>
+                          <div>
+                            <input type="text" id="total-marks" name="total-marks" placeholder="Total Marks Obtained" required>
+                          </div>
+                            <input type="text" id="full-marks" name="full-marks" placeholder="Full Marks in Exam" required>
+                            <button onclick="percentage()" class="grid-half">Calculate</button>
+                            <input type="text" id="show-percentage" readonly>
+                        </div>
+                        <div>
+                            <label for="hobbies">Any extra-curricular activity?</label>
+                            <input list="hobby" name="hobbies" id="hobbies">
+                            <datalist id="hobby">
+                                <option value="Dancing">
+                                <option value="Singing">
+                                <option value="Photography">
+                                <option value="Drawing">
+                                <option value="Cooking">
+                            </datalist>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                <legend><strong>Documents Upload</strong></legend>
+                <h5 id="note">Documents should be upload of maximum 400KB and only in .pdf formats</h5>
+                <div class="contents">
+                <div class="flex-column">
+                <label for="class-10-admit">Upload your class 10 admit card:<span class="star">* </span></label>
+                <input type="file" id="class-10-admit" name="class-10-admit" required>
+                </div>
+                <div class="flex-column">
+                <label for="class-10-result">Upload your class 10 marksheet:<span class="star">* </span></label>
+                <input type="file" id="class-10-result" name="class-10-result" required>
+                </div>
+                <div class="flex-column">
+                <label for="class-12-admit">Upload your class 10(+2) admit card:<span class="star">* </span></label>
+                <input type="file" id="class-12-admit" name="class-12-admit" required>
+                </div>
+                <div class="flex-column">
+                <label for="class-12-result">Upload your class 10(+2) marksheet:<span class="star">* </span></label>
+                <input type="file" id="class-12-result" name="class-12-result" required>
+                </div>
+                <div class="hide flex-column" id="caste-file-input">
+                <label for="caste-certificate">Upload your Caste certificate:<span class="star">* </span></label>
+                <input type="file" id="caste-certificate" name="caste-certificate">
+                </div>
+                <div class="hide flex-column" id="disability-file-input">
+                <label for="disability-certificate">Upload your Disability certificate:<span class="star">* </span></label>
+                <input type="file" id="disability-certificate" name="disability-certificate">
+                </div>
+                </div>
+                </fieldset>
+                <div id="declaration-part">
+                <input type="checkbox" id="my-consent" name="my-consent" value="declared" required>
+                <label for="my-consent">I hereby declare that all the information given above is true and correct to the best
+                of my knowledge.<span class="star">* </span></label>
+                </div>
+                <div class="submit-btn-part">
+                <input id="submit-btn" type="submit" value="Save & Register">
+                </div>
+            </form>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
